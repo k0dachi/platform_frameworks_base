@@ -179,14 +179,14 @@ public class ZygoteInit {
 
     static void preload() {
         Log.d(TAG, "begin preload");
-        preloadClasses();
-        preloadResources();
-        preloadOpenGL();
+        //preloadClasses();
+        //preloadResources();
+        //preloadOpenGL();
         preloadSharedLibraries();
-        preloadTextResources();
+        //preloadTextResources();
         // Ask the WebViewFactory to do any initialization that must run in the zygote process,
         // for memory sharing purposes.
-        WebViewFactory.prepareWebViewInZygote();
+        //WebViewFactory.prepareWebViewInZygote();
         Log.d(TAG, "end preload");
     }
 
